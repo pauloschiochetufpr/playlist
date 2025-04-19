@@ -2,7 +2,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
-
+//menu p ver cada operação funcionando
 void exibir_menu() {
     printf("1. Adicionar música\n"
            "2. Remover música\n"
@@ -34,7 +34,7 @@ int main() {
         exibir_menu();
         scanf("%d", &opcao);
         limpar_buffer();
-        
+        // uso de switch case para cada operação
         switch (opcao) {
             case 1:
                 printf("Título: ");
