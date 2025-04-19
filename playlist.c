@@ -131,7 +131,7 @@ void listar_musicas(Playlist* playlist) {
         return;
     }
     
-    printf("\n=== MÚSICAS (%d) ===\n", playlist->tamanho);
+    printf("\nMÚSICAS (%d)\n", playlist->tamanho);
     
     Musica* atual = playlist->atual;
     Musica* inicio = atual;
@@ -175,7 +175,7 @@ void exibir_musica_atual(Playlist* playlist) {
     int min = playlist->atual->duracao / 60;
     int seg = playlist->atual->duracao % 60;
     
-    printf("▶ %s - %s (%d:%02d)\n", 
+    printf("Tempo %s - %s (%d:%02d)\n", 
            playlist->atual->titulo, 
            playlist->atual->artista, 
            min, seg);
